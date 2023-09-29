@@ -22,6 +22,18 @@ h1{
 
 .field{
     padding: 30px;
+    border-radius: 10px;
+    background-color: #8d8d8d;
+    box-shadow: 0 0 5px #090909;
+    border: 1px solid black;
+}
+
+legend{
+    background-color: rgb(22, 22, 22);
+    color: #fff;
+    padding: 7px;
+    font-size: 15px;
+    border-radius: 5px;
 }
 
 .form-control{
@@ -30,4 +42,87 @@ h1{
 
 .form-control input{
     padding: 5px;
+    border-radius: 3px;
+    margin-left: 5px;
+    border: none;
+}
+
+.name input, .lastName input, .email input{
+    width: 200px;
+}
+
+/* Custom Checkbox */
+.notify-inner {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 14px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.notify-inner input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    border-radius: 2px;
+    position: absolute;
+    top: 2px;
+    left: 70px;
+    height: 13px;
+    width: 13px;
+    background-color: #eee;
+}
+
+.checkmark:hover {
+    background-color: #ccc;
+}
+.notify-inner input:checked ~ .checkmark {
+    background-color: #333;
+}
+.checkmark:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.notify-inner input:checked ~ .checkmark:after {
+    display: block;
+}
+.notify-inner .checkmark:after {
+    left: 4px;
+    top: 2px;
+    width: 5px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* End of Custom Checkbox */
+
+.submit-btn{
+    width: 100%;
+    position: relative;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.submit-btn:hover{
+    background-color: #333;
+    color: white;
 }

@@ -14,17 +14,17 @@
       <fieldset class="field person">
         <legend>Form</legend>
 
-        <div class="form-control">
+        <div class="form-control name">
           <label for="fname">First Name:</label>
           <input type="text" id="fname" placeholder="Your first name" />
         </div>
 
-        <div class="form-control">
+        <div class="form-control lastName">
           <label for="lname">Last Name:</label>
           <input type="text" id="lname" placeholder="Your last name" />
         </div>
 
-        <div class="form-control">
+        <div class="form-control birthday">
           <label for="birthday">Birthday:</label>
           <input
             type="date"
@@ -34,7 +34,7 @@
           />
         </div>
 
-        <div class="form-control">
+        <div class="form-control email">
           <label for="email">Email:</label>
           <input
             type="email"
@@ -43,17 +43,25 @@
           />
         </div>
 
-        <div class="form-control">
-          <label for="notify">Notify me</label>
-          <input type="checkbox" id="notify" />
+        <div class="form-control notify">
+          <label for="notify" class="notify-inner"
+            >Notify me
+            <input type="checkbox" id="notify" checked />
+            <span class="checkmark"></span>
+          </label>
         </div>
 
         <div class="form-control">
           <label for="telefon">Phone Number:</label>
-          <input type="tel" id="telefon" />
+          <input
+            type="tel"
+            id="telefon"
+            maxlength="23"
+            placeholder="+7 (888) 999 7777"
+          />
         </div>
 
-        <button type="submit" id="submitBtn">Submit</button>
+        <button type="submit" class="submit-btn" id="submitBtn">Submit</button>
       </fieldset>
     </form>
   </body>
