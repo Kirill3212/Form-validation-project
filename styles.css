@@ -17,27 +17,30 @@ body{
 }
 
 h1{
-    margin-bottom: 30px;
+    font-size: 1.4rem;
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    color: rgb(146, 146, 146);
 }
 
 .field{
     padding: 30px;
     border-radius: 10px;
-    background-color: #8d8d8d;
-    box-shadow: 0 0 5px #090909;
-    border: 1px solid black;
+    background-color: #dadada;
+    box-shadow: 0 0 10px #858585;
+    border: none;
+    width: 400px;
 }
 
-legend{
-    background-color: rgb(22, 22, 22);
-    color: #fff;
-    padding: 7px;
-    font-size: 15px;
-    border-radius: 5px;
-}
 
 .form-control{
     margin: 30px 0;
+    position: relative;
+}
+
+.form-control label{
+    font-weight: 400;
 }
 
 .form-control input{
@@ -48,8 +51,58 @@ legend{
 }
 
 .name input, .lastName input, .email input{
-    width: 200px;
+    width: 220px;
 }
+
+.form-control i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 60px;
+    visibility: hidden;
+}
+
+.name i,
+.lastName i,
+.phoneNumber i {
+    position: absolute;
+    right: 5px;
+}
+
+.birthday i {
+    right: 120px;
+}
+
+.email i{
+    right: 42px;
+}
+
+.phoneNumber i{
+    right: 23px;
+}
+
+.form-control small {
+    font-size: 12px;
+    position: absolute;
+    left: 93px;
+    top: 28px;
+    color: rgb(175, 1, 1);
+    visibility: hidden;
+}
+
+.birthday small{
+    left: 75px;
+    top: 29px;
+}
+
+.email small{
+    left: 55px;
+}
+
+.phoneNumber small{
+    left: 122px;
+}
+
 
 /* Custom Checkbox */
 .notify-inner {
@@ -61,6 +114,7 @@ legend{
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    width: 90px;
 }
 
 .notify-inner input{
@@ -115,7 +169,7 @@ legend{
     width: 100%;
     position: relative;
     font-size: 15px;
-    padding: 5px;
+    padding: 8px 5px;
     border-radius: 3px;
     border: none;
     cursor: pointer;
@@ -123,6 +177,6 @@ legend{
 }
 
 .submit-btn:hover{
-    background-color: #333;
+    background-color: #6f6f6f;
     color: white;
 }
